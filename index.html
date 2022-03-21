@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<meta name="Gabriela" content="Calculadora de Edad" />
+    
+    <link rel="icon"  type="image/png" href="img/favicon.png"/>
+	<title>Calculadora de Edad</title> 
+    <link type="text/css" rel="stylesheet" href="style/style.css"/>
+</head>
+<body class="bg" background="img/paisaje.png">
+
+<div class="color bg">
+	<div class="contenedor">
+	<center><p class="tittle big"><b>CALCULADORA DE EDAD</b></p></center>
+
+		<label class="tittle small"><b>Fecha de nacimiento</b></label><br>
+    	<center><input type="date" name="user_date" id="user_date" /> <br></center>
+    <!--En onclick="javascript:calcularEdad();" se llama la función "calcularEdad" para capturar los datos (fecha)-->
+    	<input type="button" value="Calcular edad" class="boton" onclick="javascript:calcularEdad();" /> <br>
+
+    <!--id="result" llama a  (document.getElementById("result").innerHTML=) del documento js para mostrar en
+    	pantalla el "resultado" de la operación (edad-meses-días)-->
+    	<center><b><i id="result"></i></b></center>
+	</div>
+
+</div>
+<!--Llama al archivo javascript encargado de realizar los cálculos concernientes a la edad, meses y días-->
+<script src="js/js.js"></script>
+
+
+</body>
+</html>
